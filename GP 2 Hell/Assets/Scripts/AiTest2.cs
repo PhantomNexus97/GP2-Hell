@@ -120,7 +120,7 @@ public class AiTest2 : MonoBehaviour
             _navMeshAgent.SetDestination(_waypoints[_m_currentWaypointIndex].position);    
             if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
             {
-                if (_m_WaitTime <= 0)
+                if (_m_WaitTime <= 0.1)
                 {
                     NextPoint();
                     Move(_speedWalk);
