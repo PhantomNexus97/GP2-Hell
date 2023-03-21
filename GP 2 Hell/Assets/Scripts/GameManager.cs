@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     //Player
     public UnitHealthSystem _playerHealth = new UnitHealthSystem(200, 200);
 
-
+    ItemAlter alter;
     void Awake()
     {
         if (gameManager != null && gameManager != this)
@@ -24,6 +24,17 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if(alter._serveredStagsHeadDisplayed == true && alter._stagDecayingPhalliDisplayed == true && 
+            alter._stagsEyeballDisplayed == true && alter._stagsHeartDisplayed == true &&
+            alter._stagsHoofDisplayed == true && alter._stagsLegDisplayed == true && 
+            alter._stagsTorsoDisplayed == true)
+        {
+            Debug.Log("Victory");
+        }
+        else
+        {
+            return;
+        }
 
     }
 

@@ -11,6 +11,12 @@ TagManager:
   - NavPoint_01
   - NavPoint_02
   - StagHead
+  - StagHeart
+  - StagLeg
+  - StagHoof
+  - StagEyeballs
+  - StagTorso
+  - StagsDecayingPhalli
   layers:
   - Default
   - TransparentFX
