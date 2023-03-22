@@ -9,9 +9,9 @@ public class GameManager : MonoBehaviour
     //Player
     public UnitHealthSystem _playerHealth = new UnitHealthSystem(200, 200);
 
-    ItemAlter alter;
+    public bool _placedStagHead, _placedStagTorso, _placedStagEye, _placedStagHeart, _placedStagHoof,
+        _placedStagLeg, _placedStagPhalli = false;
 
-    public bool allTrue = true;
     void Awake()
     {
         if (gameManager != null && gameManager != this)
@@ -21,6 +21,18 @@ public class GameManager : MonoBehaviour
         else
         {
             gameManager = this;
+        }
+    }
+    private void Update()
+    {
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "CheeseEnemy")
+        {
+            _placedStagHead = true;
         }
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 2171.0752, g: 2285.2578, b: 3344.5586, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 94833594}
   - component: {fileID: 94833593}
   - component: {fileID: 94833592}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: OfferingSlab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ Transform:
   m_GameObject: {fileID: 94833591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.4, y: 1.52, z: 17.58}
-  m_LocalScale: {x: 26.15968, y: 3.3416, z: 10.688}
+  m_LocalScale: {x: 26.15968, y: 3.3416, z: 16.671143}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -989,7 +989,7 @@ MonoBehaviour:
     type: 3}
   _stagsLeg: {fileID: 5287157302707726247, guid: 2824205ee8317a746a12b2d0cd44ad64,
     type: 3}
-  _stagDecayingPhalli: {fileID: 4118615960776613856, guid: ea414533bc3971446be5977eef43d172,
+  _stagDecayingPhalli: {fileID: 3472791575101006896, guid: 6605efe4d9cf5fb4f971de27a4454a1d,
     type: 3}
   _stagsHoof: {fileID: 1125589816807537898, guid: 1290bfc9a9ebf85469bdb9342853c37e,
     type: 3}
@@ -998,7 +998,7 @@ MonoBehaviour:
   _stagsTorso: {fileID: 773000651914387026, guid: a702a3f2707a88147abe7c8a9ebc48bf,
     type: 3}
   _itemSpawnPoint: {fileID: 868531256}
-  _InputKey: 101
+  _inputKey: 101
 --- !u!65 &640427564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1010,7 +1010,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.44, y: 2.9, z: 3.18}
+  m_Size: {x: 2.44, y: 6.34, z: 3.18}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &640427565
 Transform:
@@ -1020,7 +1020,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640427562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16000009, y: 4.66, z: 17.69}
+  m_LocalPosition: {x: 4.41, y: 4.66, z: 17.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1445,7 +1445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 2126453423}
   _InputKeyDisplay: {fileID: 1820118901}
-  _serveredStagsHead: {fileID: 3472791575101006896, guid: ed1bb62f57475f549aa7f79f055fddbb,
+  _serveredStagsHead: {fileID: 3472791575101006896, guid: 85587fb2fa943ee479f46940ca182a4e,
     type: 3}
   _stagsHeart: {fileID: 0}
   _stagsLeg: {fileID: 0}
@@ -1454,7 +1454,7 @@ MonoBehaviour:
   _stagsEyeball: {fileID: 0}
   _stagsTorso: {fileID: 0}
   _itemSpawnPoint: {fileID: 1806168603}
-  _InputKey: 101
+  _inputKey: 101
 --- !u!65 &974341849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1466,7 +1466,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.44, y: 2.9, z: 3.18}
+  m_Size: {x: 2.44, y: 6.34, z: 3.18}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &974341850
 Transform:
@@ -1476,7 +1476,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974341847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.55, y: 4.66, z: 17.69}
+  m_LocalPosition: {x: -11.98, y: 4.66, z: 17.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1558,7 +1558,7 @@ GameObject:
   - component: {fileID: 1076612870}
   - component: {fileID: 1076612869}
   - component: {fileID: 1076612868}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: OfferingSlab_Slope_Temp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1805,12 +1805,12 @@ MonoBehaviour:
     type: 3}
   _stagsHoof: {fileID: 1125589816807537898, guid: 1290bfc9a9ebf85469bdb9342853c37e,
     type: 3}
-  _stagsEyeball: {fileID: 2738028129055084509, guid: 273c1a4db5fd8db4bbdc37fbb6880774,
+  _stagsEyeball: {fileID: 3472791575101006896, guid: eedeea1dbdde7df4baacd5c161170013,
     type: 3}
   _stagsTorso: {fileID: 773000651914387026, guid: a702a3f2707a88147abe7c8a9ebc48bf,
     type: 3}
   _itemSpawnPoint: {fileID: 771235426}
-  _InputKey: 101
+  _inputKey: 101
 --- !u!65 &1295200623
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1822,7 +1822,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.44, y: 2.9, z: 3.18}
+  m_Size: {x: 2.44, y: 6.34, z: 3.18}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1295200624
 Transform:
@@ -1832,7 +1832,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295200621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.53, y: 4.66, z: 21.32}
+  m_LocalPosition: {x: -5.17, y: 4.66, z: 23.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2183,14 +2183,14 @@ MonoBehaviour:
     type: 3}
   _stagDecayingPhalli: {fileID: 4118615960776613856, guid: ea414533bc3971446be5977eef43d172,
     type: 3}
-  _stagsHoof: {fileID: 1125589816807537898, guid: 1290bfc9a9ebf85469bdb9342853c37e,
+  _stagsHoof: {fileID: 3472791575101006896, guid: 14a30d5499bd27c42bad1df11d10c0e7,
     type: 3}
   _stagsEyeball: {fileID: 2738028129055084509, guid: 273c1a4db5fd8db4bbdc37fbb6880774,
     type: 3}
   _stagsTorso: {fileID: 773000651914387026, guid: a702a3f2707a88147abe7c8a9ebc48bf,
     type: 3}
   _itemSpawnPoint: {fileID: 910622377}
-  _InputKey: 101
+  _inputKey: 101
 --- !u!65 &1685243570
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2202,7 +2202,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.44, y: 2.9, z: 3.18}
+  m_Size: {x: 2.44, y: 6.34, z: 3.18}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1685243571
 Transform:
@@ -2212,7 +2212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685243568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.93, y: 4.66, z: 17.69}
+  m_LocalPosition: {x: 9.07, y: 4.66, z: 17.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2729,10 +2729,10 @@ MonoBehaviour:
     type: 3}
   _stagsEyeball: {fileID: 2738028129055084509, guid: 273c1a4db5fd8db4bbdc37fbb6880774,
     type: 3}
-  _stagsTorso: {fileID: 773000651914387026, guid: a702a3f2707a88147abe7c8a9ebc48bf,
+  _stagsTorso: {fileID: 3472791575101006896, guid: 9416bd752f009b14b9d09d291c198ab3,
     type: 3}
   _itemSpawnPoint: {fileID: 981021299}
-  _InputKey: 101
+  _inputKey: 101
 --- !u!65 &1853864494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2744,7 +2744,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.44, y: 2.9, z: 3.18}
+  m_Size: {x: 2.44, y: 6.34, z: 2.99}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1853864495
 Transform:
@@ -2754,7 +2754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853864492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.53, y: 4.66, z: 17.69}
+  m_LocalPosition: {x: -5.17, y: 4.66, z: 17.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2796,7 +2796,7 @@ MonoBehaviour:
   _InputKeyDisplay: {fileID: 1820118901}
   _serveredStagsHead: {fileID: 3472791575101006896, guid: f137db1b2fc65874b82f9e29997fb90a,
     type: 3}
-  _stagsHeart: {fileID: 4000804027642074569, guid: 7d7685ff237b98740a54d9d13c4d21ec,
+  _stagsHeart: {fileID: 3472791575101006896, guid: ed1bb62f57475f549aa7f79f055fddbb,
     type: 3}
   _stagsLeg: {fileID: 5287157302707726247, guid: 2824205ee8317a746a12b2d0cd44ad64,
     type: 3}
@@ -2809,7 +2809,7 @@ MonoBehaviour:
   _stagsTorso: {fileID: 773000651914387026, guid: a702a3f2707a88147abe7c8a9ebc48bf,
     type: 3}
   _itemSpawnPoint: {fileID: 881631360}
-  _InputKey: 101
+  _inputKey: 101
 --- !u!65 &1884135085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2821,7 +2821,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.44, y: 2.9, z: 3.18}
+  m_Size: {x: 2.44, y: 6.34, z: 3.18}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1884135086
 Transform:
@@ -2831,7 +2831,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884135083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7, y: 4.66, z: 17.69}
+  m_LocalPosition: {x: -1, y: 4.66, z: 17.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2923,7 +2923,7 @@ MonoBehaviour:
     type: 3}
   _stagsHeart: {fileID: 4000804027642074569, guid: 7d7685ff237b98740a54d9d13c4d21ec,
     type: 3}
-  _stagsLeg: {fileID: 5287157302707726247, guid: 2824205ee8317a746a12b2d0cd44ad64,
+  _stagsLeg: {fileID: 3472791575101006896, guid: e76215a8770b42a46a3bf838cb264ada,
     type: 3}
   _stagDecayingPhalli: {fileID: 4118615960776613856, guid: ea414533bc3971446be5977eef43d172,
     type: 3}
@@ -2934,7 +2934,7 @@ MonoBehaviour:
   _stagsTorso: {fileID: 773000651914387026, guid: a702a3f2707a88147abe7c8a9ebc48bf,
     type: 3}
   _itemSpawnPoint: {fileID: 743048905}
-  _InputKey: 101
+  _inputKey: 101
 --- !u!65 &2027333577
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2946,7 +2946,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.44, y: 2.9, z: 3.18}
+  m_Size: {x: 2.44, y: 6, z: 3.18}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2027333578
 Transform:
@@ -2956,7 +2956,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027333575}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.53, y: 4.66, z: 13.86}
+  m_LocalPosition: {x: -5.17, y: 4.66, z: 11.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3196,7 +3196,7 @@ MonoBehaviour:
   _stagDecayingPhalli: 1
   _stagsHoof: 1
   _stagsEyeball: 1
-  _stagsTorso: 0
+  _stagsTorso: 1
 --- !u!136 &2126453424
 CapsuleCollider:
   m_ObjectHideFlags: 0
