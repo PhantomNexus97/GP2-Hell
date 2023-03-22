@@ -3,7 +3,22 @@ guid: 360f3fcc4a2a54d408cc6e99cceb5385
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _InputKeyDisplay: {instanceID: 0}
+  - _serveredStagsHead: {fileID: 3472791575101006896, guid: f137db1b2fc65874b82f9e29997fb90a,
+      type: 3}
+  - _stagsHeart: {fileID: 4000804027642074569, guid: 7d7685ff237b98740a54d9d13c4d21ec,
+      type: 3}
+  - _stagsLeg: {fileID: 5287157302707726247, guid: 2824205ee8317a746a12b2d0cd44ad64,
+      type: 3}
+  - _stagDecayingPhalli: {fileID: 4118615960776613856, guid: ea414533bc3971446be5977eef43d172,
+      type: 3}
+  - _stagsHoof: {fileID: 1125589816807537898, guid: 1290bfc9a9ebf85469bdb9342853c37e,
+      type: 3}
+  - _stagsEyeball: {fileID: 2738028129055084509, guid: 273c1a4db5fd8db4bbdc37fbb6880774,
+      type: 3}
+  - _stagsTorso: {fileID: 773000651914387026, guid: a702a3f2707a88147abe7c8a9ebc48bf,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

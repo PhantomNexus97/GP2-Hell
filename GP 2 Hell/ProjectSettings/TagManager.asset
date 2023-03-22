@@ -17,6 +17,13 @@ TagManager:
   - StagEyeballs
   - StagTorso
   - StagsDecayingPhalli
+  - SH_Display
+  - ST_Display
+  - SE_Display
+  - SHRT_Display
+  - SP_Display
+  - SHF_Display
+  - SL_Display
   layers:
   - Default
   - TransparentFX

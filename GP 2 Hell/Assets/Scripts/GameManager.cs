@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public UnitHealthSystem _playerHealth = new UnitHealthSystem(200, 200);
 
     ItemAlter alter;
+
+    public bool allTrue = true;
     void Awake()
     {
         if (gameManager != null && gameManager != this)
@@ -21,23 +23,6 @@ public class GameManager : MonoBehaviour
             gameManager = this;
         }
     }
-
-    void Update()
-    {
-        if(alter._serveredStagsHeadDisplayed == true && alter._stagDecayingPhalliDisplayed == true && 
-            alter._stagsEyeballDisplayed == true && alter._stagsHeartDisplayed == true &&
-            alter._stagsHoofDisplayed == true && alter._stagsLegDisplayed == true && 
-            alter._stagsTorsoDisplayed == true)
-        {
-            Debug.Log("Victory");
-        }
-        else
-        {
-            return;
-        }
-
-    }
-
 
     public void PlayerTakeDamage(int dmg)
     {
