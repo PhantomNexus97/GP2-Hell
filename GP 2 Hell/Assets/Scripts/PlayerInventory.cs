@@ -13,6 +13,19 @@ public class PlayerInventory : MonoBehaviour
     public bool _stagsEyeball = false;
     public bool _stagsTorso = false;
 
+    public bool _placedStagHead, _placedStagTorso, _placedStagEye, _placedStagHeart, _placedStagHoof,
+    _placedStagLeg, _placedStagPhalli = false;
+    void Update()
+    {
+        if (_placedStagEye == true && _placedStagHead == true &&
+           _placedStagTorso == true && _placedStagHeart == true &&
+           _placedStagLeg == true && _placedStagPhalli == true &&
+           _placedStagHoof == true)
+        {
+            Debug.Log("GameOver");
+        }
+    }
+
     public void FoundStagHead()
     {
         _serveredStagsHead = true;

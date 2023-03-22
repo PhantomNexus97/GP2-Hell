@@ -46,11 +46,13 @@ public class ItemAlter : MonoBehaviour
         {
             if (Input.GetKeyDown(_inputKey))
             {
+                
                 _InputKeyDisplay.SetActive(true);
                 _ItemsDisplayed["_serveredStagsHeadDisplayed"] = true;
                 inventory._serveredStagsHead = false;
                 Instantiate(_serveredStagsHead, _itemSpawnPoint.position, _itemSpawnPoint.rotation);
                 Debug.Log("ItemDisplayed");
+                inventory._placedStagHead = true;
             }
         }
 
@@ -58,11 +60,13 @@ public class ItemAlter : MonoBehaviour
         {
             if (Input.GetKeyDown(_inputKey))
             {
+                
                 _InputKeyDisplay.SetActive(true);
                 _ItemsDisplayed["_stagsHeartDisplayed"] = true;
                 inventory._stagsHeart = false;
                 Instantiate(_stagsHeart, _itemSpawnPoint.position, _itemSpawnPoint.rotation);
                 Debug.Log("ItemDisplayed");
+                inventory._placedStagHeart = true;
             }
         }
 
@@ -70,10 +74,12 @@ public class ItemAlter : MonoBehaviour
         {
             if (Input.GetKeyDown(_inputKey))
             {
+               
                 _InputKeyDisplay.SetActive(true);
                 _ItemsDisplayed["_stagsLegDisplayed"] = true;
                 inventory._stagsLeg = false;
                 Instantiate(_stagsLeg, _itemSpawnPoint.position, _itemSpawnPoint.rotation);
+                inventory._placedStagLeg = true;
             }
         }
 
@@ -85,6 +91,7 @@ public class ItemAlter : MonoBehaviour
                 _ItemsDisplayed["_stagDecayingPhalliDisplayed"] = true;
                 inventory._stagDecayingPhalli = false;
                 Instantiate(_stagDecayingPhalli, _itemSpawnPoint.position, _itemSpawnPoint.rotation);
+                inventory._placedStagPhalli = true;
             }
             
         }
@@ -97,6 +104,7 @@ public class ItemAlter : MonoBehaviour
                 _ItemsDisplayed["_stagsHoofDisplayed"] = true;
                 inventory._stagsHoof = false;
                 Instantiate(_stagsHoof, _itemSpawnPoint.position, _itemSpawnPoint.rotation);
+                inventory._placedStagHoof = true;
             }
             
         }
@@ -109,6 +117,7 @@ public class ItemAlter : MonoBehaviour
                 _ItemsDisplayed["_stagsEyeballDisplayed"] = true;
                 inventory._stagsEyeball = false;
                 Instantiate(_stagsEyeball, _itemSpawnPoint.position, _itemSpawnPoint.rotation);
+                inventory._placedStagEye = true;
             }
             
         }
@@ -121,6 +130,7 @@ public class ItemAlter : MonoBehaviour
                 _ItemsDisplayed["_stagsTorsoDisplayed"] = true;
                 inventory._stagsTorso = false;
                 Instantiate(_stagsTorso, _itemSpawnPoint.position, _itemSpawnPoint.rotation);
+                inventory._placedStagTorso = true;
             }
             
         }

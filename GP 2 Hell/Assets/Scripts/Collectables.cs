@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Collectables : MonoBehaviour
 {
-    PlayerInventory inventory;
+   public PlayerInventory inventory;
     void OnTriggerEnter(Collider Col)
     {
         PlayerInventory inventory = Col.GetComponent<PlayerInventory>();
@@ -39,7 +39,7 @@ public class Collectables : MonoBehaviour
             }
         }
 
-        if (gameObject.tag == "StagDecayingPhalli")
+        if (gameObject.tag == "StagsDecayingPhalli")
         {
             if (inventory != null)
             {
@@ -49,7 +49,7 @@ public class Collectables : MonoBehaviour
             }
         }
 
-        if (gameObject.tag == "Staghoof")
+        if (gameObject.tag == "StagHoof")
         {
             if (inventory != null)
             {
@@ -59,7 +59,7 @@ public class Collectables : MonoBehaviour
             }
         }
 
-        if (gameObject.tag == "StagEyeball")
+        if (gameObject.tag == "StagEyeballs")
         {
             if (inventory != null)
             {
