@@ -41,7 +41,7 @@ public class ItemAlter : MonoBehaviour
     {
         PlayerInventory inventory = Col.GetComponent<PlayerInventory>();
 
-        if (inventory._serveredStagsHead == true && gameObject.tag == "SH_Display")
+        if ( gameObject.tag == "SH_Display" && inventory._serveredStagsHead == true)
         {
             _InputKeyDisplay.SetActive(true);
             

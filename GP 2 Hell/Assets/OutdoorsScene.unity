@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2166.4785, g: 2276.9258, b: 3322.8867, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -981,8 +981,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360f3fcc4a2a54d408cc6e99cceb5385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  _InputKeyDisplay: {fileID: 2126453418}
+  inventory: {fileID: 2126453423}
+  _InputKeyDisplay: {fileID: 1820118901}
   _serveredStagsHead: {fileID: 3472791575101006896, guid: f137db1b2fc65874b82f9e29997fb90a,
     type: 3}
   _stagsHeart: {fileID: 4000804027642074569, guid: 7d7685ff237b98740a54d9d13c4d21ec,
@@ -1447,18 +1447,12 @@ MonoBehaviour:
   _InputKeyDisplay: {fileID: 1820118901}
   _serveredStagsHead: {fileID: 3472791575101006896, guid: ed1bb62f57475f549aa7f79f055fddbb,
     type: 3}
-  _stagsHeart: {fileID: 4000804027642074569, guid: 7d7685ff237b98740a54d9d13c4d21ec,
-    type: 3}
-  _stagsLeg: {fileID: 5287157302707726247, guid: 2824205ee8317a746a12b2d0cd44ad64,
-    type: 3}
-  _stagDecayingPhalli: {fileID: 4118615960776613856, guid: ea414533bc3971446be5977eef43d172,
-    type: 3}
-  _stagsHoof: {fileID: 1125589816807537898, guid: 1290bfc9a9ebf85469bdb9342853c37e,
-    type: 3}
-  _stagsEyeball: {fileID: 2738028129055084509, guid: 273c1a4db5fd8db4bbdc37fbb6880774,
-    type: 3}
-  _stagsTorso: {fileID: 773000651914387026, guid: a702a3f2707a88147abe7c8a9ebc48bf,
-    type: 3}
+  _stagsHeart: {fileID: 0}
+  _stagsLeg: {fileID: 0}
+  _stagDecayingPhalli: {fileID: 0}
+  _stagsHoof: {fileID: 0}
+  _stagsEyeball: {fileID: 0}
+  _stagsTorso: {fileID: 0}
   _itemSpawnPoint: {fileID: 1806168603}
   _InputKey: 101
 --- !u!65 &974341849
@@ -2721,8 +2715,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360f3fcc4a2a54d408cc6e99cceb5385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  _InputKeyDisplay: {fileID: 2126453418}
+  inventory: {fileID: 2126453423}
+  _InputKeyDisplay: {fileID: 1820118901}
   _serveredStagsHead: {fileID: 3472791575101006896, guid: f137db1b2fc65874b82f9e29997fb90a,
     type: 3}
   _stagsHeart: {fileID: 4000804027642074569, guid: 7d7685ff237b98740a54d9d13c4d21ec,
@@ -3196,12 +3190,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c71df46f7f7f96468286709a37c220e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _serveredStagsHead: 0
-  _stagsHeart: 0
-  _stagsLeg: 0
-  _stagDecayingPhalli: 0
-  _stagsHoof: 0
-  _stagsEyeball: 0
+  _serveredStagsHead: 1
+  _stagsHeart: 1
+  _stagsLeg: 1
+  _stagDecayingPhalli: 1
+  _stagsHoof: 1
+  _stagsEyeball: 1
   _stagsTorso: 0
 --- !u!136 &2126453424
 CapsuleCollider:
