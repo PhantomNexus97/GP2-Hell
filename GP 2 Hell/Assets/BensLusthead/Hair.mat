@@ -137,7 +137,7 @@ Material:
     - _AlbedoAffectEmissive: 0
     - _AlphaClipThreshold: 0
     - _AlphaClipThresholdDepthPostpass: 1
-    - _AlphaClipThresholdDepthPrepass: 0.844
+    - _AlphaClipThresholdDepthPrepass: 0.667
     - _AlphaCutoff: 0.5
     - _AlphaCutoffEnable: 1
     - _AlphaCutoffPostpass: 0.5
@@ -213,7 +213,7 @@ Material:
     - _SecondarySpecularShift: 0.9
     - _Smoothness: 0.5
     - _SmoothnessMax: 0.7
-    - _SmoothnessMin: 0.3
+    - _SmoothnessMin: 0.432
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
     - _Specular: 1
