@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene("OutdoorsScene");
+        SceneManager.LoadScene("Level_Lust");
     }
 
 

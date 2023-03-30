@@ -17,7 +17,7 @@ MonoBehaviour:
     supportSSR: 1
     supportSSRTransparent: 0
     supportSSAO: 1
-    supportSSGI: 0
+    supportSSGI: 1
     supportSubsurfaceScattering: 1
     sssSampleBudget:
       m_Values: 140000002800000050000000
@@ -75,7 +75,7 @@ MonoBehaviour:
       maxDecalsOnScreen: 512
       maxPlanarReflectionOnScreen: 16
       maxLightsPerClusterCell: 16
-      maxLocalVolumetricFogSize: 32
+      maxLocalVolumetricFogSize: 64
       maxLocalVolumetricFogOnScreen: 64
     hdShadowInitParams:
       maxShadowRequests: 128

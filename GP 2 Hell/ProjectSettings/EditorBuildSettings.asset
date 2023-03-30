@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 955c1672df5ad1641b1b4a56fd2a15d2
   - enabled: 1
-    path: Assets/Scenes/OutdoorsScene.unity
-    guid: 8124e5870f4fd4c779e7a5f994e84ad1
+    path: Assets/Scenes/Level_Lust.unity
+    guid: 05010f77b92f5bc4b901bdee6287013d
   m_configObjects: {}
