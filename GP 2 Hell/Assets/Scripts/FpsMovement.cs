@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FpsMovement : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class FpsMovement : MonoBehaviour
     public float maxSprintStamina = 30;
     public float staminaRegenRate;
     private bool isRegenerating = false;
+    public bool _canSprint = true;
+    public Image _staminaBar;
+    float _lerpSpeed;
 
     [Header("Jumping")]
     public float jumpForce;
@@ -46,8 +50,9 @@ public class FpsMovement : MonoBehaviour
     public LayerMask whatIsGround;
     bool grounded;
 
-    public GameObject objectPrefab; 
-    public LayerMask floorLayer;
+    [Header("Attack Sigil")]
+    public GameObject _attackSigil; 
+    public LayerMask _floorLayer;
 
     public Transform orientation;
 
@@ -101,11 +106,12 @@ public class FpsMovement : MonoBehaviour
             return;
         }
 
-        if(Input.GetKeyUp(sprintKey)) 
-        { 
+        if(_canSprint == false) 
+        {
             isRegenerating = true;
             StartCoroutine(RegenerateStamina());
         }
+
 
 
         if (Input.GetKeyDown(placeSigil)) // check if the left mouse button is clicked
@@ -113,13 +119,25 @@ public class FpsMovement : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); // create a ray from the camera to the mouse position
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, floorLayer)) // cast the ray and check if it hits the floor
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, _floorLayer)) // cast the ray and check if it hits the floor
             {
-                Instantiate(objectPrefab, hit.point, Quaternion.identity); // instantiate the object at the hit point
+                Instantiate(_attackSigil, hit.point, Quaternion.identity); // instantiate the object at the hit point
             }
         }
 
+        StaminahBarFiller();
+        _lerpSpeed = 3f * Time.deltaTime;
 
+       if(sprintStamina <= 5) 
+       {
+            _canSprint = false; 
+       }
+
+    }
+
+    void StaminahBarFiller()
+    {
+        _staminaBar.fillAmount = Mathf.Lerp(_staminaBar.fillAmount, (sprintStamina / maxSprintStamina), _lerpSpeed);
     }
 
     private void FixedUpdate()
@@ -172,17 +190,18 @@ public class FpsMovement : MonoBehaviour
         }
 
         //Sprinting
-        if(grounded && Input.GetKey(sprintKey))
+        if(grounded && Input.GetKeyDown(sprintKey) && sprintStamina >= 5 && _canSprint == true)
         {
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;
-            UseStamina(.1f);
+            UseStamina(.2f);
+            Debug.Log("Sprinting");
+        } 
 
-        }
 
-
-        else if (grounded)
+        if (grounded)
         {
+            Debug.Log("Walking");
             state = MovementState.walking;
             moveSpeed = walkSpeed;
         }
@@ -281,6 +300,14 @@ public class FpsMovement : MonoBehaviour
             }
             yield return null;
         }
+    }
+
+    private IEnumerator SprintWait()
+    {
+
+        yield return new WaitForSeconds (10);
+        _canSprint = true;
+        
     }
 }
 
