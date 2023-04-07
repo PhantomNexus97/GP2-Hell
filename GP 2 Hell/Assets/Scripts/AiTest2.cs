@@ -10,8 +10,8 @@ public class AiTest2 : MonoBehaviour
     public NavMeshAgent _navMeshAgent;
     public float _startWaitTime;
     public float _timeToRotate;
-    public float _speedWalk;
-    public float _speedRun;
+    public float _speedWalk = 11;
+    public float _speedRun = 23;
 
     public float _viewRadius = 15;
     public float _viewAngle = 90;
@@ -35,6 +35,10 @@ public class AiTest2 : MonoBehaviour
     bool _m_IsPatrol;
     bool _m_CaughtPlayer;
 
+
+    public float _timeUntilPatrol = 7;
+    public bool _aiEnteredSigil = false;
+
     void Start()
     {
         _m_PlayerPosition = Vector3.zero;
@@ -57,7 +61,11 @@ public class AiTest2 : MonoBehaviour
     {
         EnviromentView();
 
-        if(!_m_IsPatrol)
+        if (_aiEnteredSigil == true)
+        {
+            StartCoroutine(CaughtInSigil());
+        }
+        else if(!_m_IsPatrol)
         {
             Chasing();
         }
@@ -65,7 +73,15 @@ public class AiTest2 : MonoBehaviour
         {
             Patroling();
         }
+
     }
+    private void Alarmed()
+    {
+        Move(_speedRun);
+        _navMeshAgent.SetDestination(_m_PlayerPosition);
+    }
+
+
 
     private void Chasing()
     {
@@ -97,7 +113,7 @@ public class AiTest2 : MonoBehaviour
         }
     }
 
-    private void Patroling()
+    public void Patroling()
     {
         if (_m_PlayerNear)
         {
@@ -146,13 +162,13 @@ public class AiTest2 : MonoBehaviour
         _navMeshAgent.SetDestination(_waypoints[_m_currentWaypointIndex].position);
     }
 
-    private void Stop()
+    public void Stop()
     {
         _navMeshAgent.isStopped = true;
         _navMeshAgent.speed = 0;
     }
 
-    void Move(float speed)
+    public void Move(float speed)
     {
         _navMeshAgent.isStopped = false;
         _navMeshAgent.speed = speed;
@@ -183,7 +199,14 @@ public class AiTest2 : MonoBehaviour
             }
         }
     }
+    private IEnumerator CaughtInSigil()
+    {
+        Stop();
+        yield return new WaitForSeconds(_timeUntilPatrol);
+        Move(_speedWalk);
+        _aiEnteredSigil = false;
 
+    }
     void EnviromentView()
     {
         Collider[] playerInRange = Physics.OverlapSphere(transform.position, _viewRadius, _playerMask);   

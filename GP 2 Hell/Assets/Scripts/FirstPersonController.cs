@@ -14,6 +14,7 @@ public class FirstPersonController : MonoBehaviour
 
     [Header("Controls")]
     [SerializeField] private KeyCode _sprintKey = KeyCode.LeftShift;
+    [SerializeField] private KeyCode _attackKey = KeyCode.Mouse0;
 
     [Header("Movement")]
     [SerializeField] private float _walkSpeed = 12.0f;
@@ -37,6 +38,20 @@ public class FirstPersonController : MonoBehaviour
     float _lerpSpeed;
     private Coroutine _regeneratingStamina;
 
+    [Header("Attack Settings")]
+    [SerializeField] public bool _attackAllowed = true;
+    [SerializeField] public GameObject _sigil;
+    [SerializeField] public LayerMask _floorLayer;
+
+    [Header("UI Settings")]
+    public GameObject _healthBarUI;
+    public GameObject _staminaBarUI;
+    public GameObject _maskUI;
+    public GameObject _fpsCounterUI;
+    public GameObject _gameOverUI;
+
+
+
 
     private Camera _playerCamera;
     private CharacterController _characterController;
@@ -45,6 +60,7 @@ public class FirstPersonController : MonoBehaviour
     private Vector2 _currentInput;
 
     private float _rotaionX = 0;
+    private float _rotaionY= 0;
 
     // Start is called before the first frame update
     void Awake()
@@ -74,9 +90,33 @@ public class FirstPersonController : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(_attackKey) && _attackAllowed == true) // check if the left mouse button is clicked
+        {
+            HandleAttack();
+        }
+        else if(Input.GetKeyDown(_attackKey) && _attackAllowed == false)
+        {
+            return;
+        }
+
+   
 
     }
-
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.CompareTag("Enemy"))
+        {
+            _healthBarUI.SetActive(false);
+            _staminaBarUI.SetActive(false);
+            _maskUI.SetActive(false);
+            _fpsCounterUI.SetActive(false);
+            _gameOverUI.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Time.timeScale = 0;
+            Debug.Log("Player collided with an enemy!");
+        }
+    }
     private void HandleMovementInput()
     {
         _currentInput = new Vector2((_IsSprinting ? _sprintSpeed : _walkSpeed) * Input.GetAxis("Vertical"), (_IsSprinting ? _sprintSpeed : _walkSpeed) * Input.GetAxis("Horizontal"));
@@ -91,8 +131,22 @@ public class FirstPersonController : MonoBehaviour
         _rotaionX -= Input.GetAxis("Mouse Y") * _lookSpeedY;
         _rotaionX = Mathf.Clamp(_rotaionX, -_upperLookLimit, _lowerLookLimit);
         _playerCamera.transform.localRotation = Quaternion.Euler(_rotaionX, 0, 0);
-        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * _lookSpeedX, 0);
+        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * _lookSpeedY, 0);
     }
+
+    private void HandleAttack()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); // create a ray from the camera to the mouse position
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, _floorLayer)) // cast the ray and check if it hits the floor
+        {
+            _attackAllowed = false;
+            Instantiate(_sigil, hit.point, Quaternion.identity); // instantiate the object at the hit point
+        }
+        
+    }
+
     private void HandleStamina()
     {
         if(_IsSprinting && _currentInput != Vector2.zero)
@@ -149,4 +203,5 @@ public class FirstPersonController : MonoBehaviour
 
         _regeneratingStamina = null;
     }
+
 }

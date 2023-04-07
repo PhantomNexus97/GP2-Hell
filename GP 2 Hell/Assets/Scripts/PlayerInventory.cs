@@ -22,6 +22,10 @@ public class PlayerInventory : MonoBehaviour
     public bool _placedStagLeg = false;
     public bool _placedStagPhalli = false;
 
+    [Header("Holding Item")]
+    public bool _holdingItem = false;
+    public GameObject _heldItem;
+
 
     void Update()
     {

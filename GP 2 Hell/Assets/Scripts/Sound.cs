@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Sound : MonoBehaviour
 {
-    public string name;
+    public string Name;
 
     public AudioClip clip;
 

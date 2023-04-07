@@ -78,6 +78,8 @@ public class ItemAlter : MonoBehaviour
                     Instantiate(_serveredStagsHead, _itemSpawnPoint_01.position, _itemSpawnPoint_01.rotation);
                     Debug.Log("ItemDisplayed");
                     inventory._placedStagHead = true;
+                    inventory._heldItem.SetActive(false);
+                    inventory._holdingItem = false;
 
                 }
                 else if (gameObject.tag == "Offering Table" && inventory._stagsHeart == true)
@@ -88,6 +90,8 @@ public class ItemAlter : MonoBehaviour
                     Instantiate(_stagsHeart, _itemSpawnPoint_02.position, _itemSpawnPoint_02.rotation);
                     Debug.Log("ItemDisplayed");
                     inventory._placedStagHeart = true;
+                    inventory._heldItem.SetActive(false);
+                    inventory._holdingItem = false;
                 }
                 else if (gameObject.tag == "Offering Table" && inventory._stagsLeg == true)
                 {
@@ -96,6 +100,8 @@ public class ItemAlter : MonoBehaviour
                     inventory._stagsLeg = false;
                     Instantiate(_stagsLeg, _itemSpawnPoint_03.position, _itemSpawnPoint_03.rotation);
                     inventory._placedStagLeg = true;
+                    inventory._heldItem.SetActive(false);
+                    inventory._holdingItem = false;
                 }
                 else if (gameObject.tag == "Offering Table" && inventory._stagDecayingPhalli == true)
                 {
@@ -104,6 +110,8 @@ public class ItemAlter : MonoBehaviour
                     inventory._stagDecayingPhalli = false;
                     Instantiate(_stagDecayingPhalli, _itemSpawnPoint_04.position, _itemSpawnPoint_04.rotation);
                     inventory._placedStagPhalli = true;
+                    inventory._heldItem.SetActive(false);
+                    inventory._holdingItem = false;
                 }
                 else if (gameObject.tag == "Offering Table" && inventory._stagsHoof == true)
                 {
@@ -111,6 +119,8 @@ public class ItemAlter : MonoBehaviour
                     inventory._stagsHoof = false;
                     Instantiate(_stagsHoof, _itemSpawnPoint_05.position, _itemSpawnPoint_05.rotation);
                     inventory._placedStagHoof = true;
+                    inventory._heldItem.SetActive(false);
+                    inventory._holdingItem = false;
                 }
                 else if (gameObject.tag == "Offering Table" && inventory._stagsEyeball == true)
                 {
@@ -118,6 +128,8 @@ public class ItemAlter : MonoBehaviour
                     inventory._stagsEyeball = false;
                     Instantiate(_stagsEyeball, _itemSpawnPoint_06.position, _itemSpawnPoint_06.rotation);
                     inventory._placedStagEye = true;
+                    inventory._heldItem.SetActive(false);
+                    inventory._holdingItem = false;
                 }
                 else if (gameObject.tag == "Offering Table" && inventory._stagsTorso == true)
                 {
@@ -125,6 +137,8 @@ public class ItemAlter : MonoBehaviour
                     inventory._stagsTorso = false;
                     Instantiate(_stagsTorso, _itemSpawnPoint_07.position, _itemSpawnPoint_07.rotation);
                     inventory._placedStagTorso = true;
+                    inventory._heldItem.SetActive(false);
+                    inventory._holdingItem = false;
                 }
                 else
                 {
