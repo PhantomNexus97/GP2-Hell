@@ -15,7 +15,7 @@ E:/HellGameGithub/GP2-Hell/GP 2 Hell
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52797
+52562
 Successfully changed project path to: E:/HellGameGithub/GP2-Hell/GP 2 Hell
 E:/HellGameGithub/GP2-Hell/GP 2 Hell
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ E:/HellGameGithub/GP2-Hell/GP 2 Hell
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 97.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 113.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.1.22f1 (6b6e9fc2adda)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.1.22f1/Editor/Data/Resources/UnitySubsystems
@@ -63,101 +63,101 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2022.1.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2022.1.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2022.1.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56684
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2022.1.22f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2022.1.22f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2022.1.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003993 seconds.
+Registered in 0.004039 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 105.75 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 110.37 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.549 seconds
+- Completed reload, in  0.612 seconds
 Domain Reload Profiling:
-	ReloadAssembly (550ms)
-		BeginReloadAssembly (57ms)
+	ReloadAssembly (613ms)
+		BeginReloadAssembly (72ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (413ms)
-			LoadAssemblies (56ms)
+		EndReloadAssembly (452ms)
+			LoadAssemblies (70ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (84ms)
-				TypeCache.Initialize (84ms)
-					TypeCache.ScanAssembly (83ms)
+			SetupTypeCache (103ms)
+				TypeCache.Initialize (103ms)
+					TypeCache.ScanAssembly (102ms)
 				ResolveRequiredComponents (0ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (19ms)
-			SetupLoadedEditorAssemblies (270ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (276ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (32ms)
-				SetLoadedEditorAssemblies (5ms)
-				RefreshPlugins (106ms)
+				InitializePlatformSupportModulesInManaged (35ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (110ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (87ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
+				ProcessInitializeOnLoadAttributes (84ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005614 seconds.
+Registered in 0.008110 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\HellGameGithub\GP2-Hell\GP 2 Hell\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\HellGameGithub\GP2-Hell\GP 2 Hell\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 104.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 117.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.290 seconds
+- Completed reload, in  1.479 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1291ms)
-		BeginReloadAssembly (88ms)
+	ReloadAssembly (1479ms)
+		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (1118ms)
-			LoadAssemblies (78ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1248ms)
+			LoadAssemblies (102ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (274ms)
-				TypeCache.Initialize (265ms)
-					TypeCache.ScanAssembly (260ms)
-				ResolveRequiredComponents (9ms)
+			SetupTypeCache (308ms)
+				TypeCache.Initialize (294ms)
+					TypeCache.ScanAssembly (287ms)
+				ResolveRequiredComponents (14ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (76ms)
-			SetupLoadedEditorAssemblies (645ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (714ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (105ms)
-				BeforeProcessingInitializeOnLoad (101ms)
-				ProcessInitializeOnLoadAttributes (270ms)
-				ProcessInitializeOnLoadMethodAttributes (150ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (118ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (294ms)
+				ProcessInitializeOnLoadMethodAttributes (177ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.20 seconds
+Refreshing native plugins compatible for Editor in 3.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6523 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 64 unused Assets / (3.5 MB). Loaded Objects now: 6989.
 Memory consumption went from 1.04 GB to 1.03 GB.
-Total: 4.371700 ms (FindLiveObjects: 0.448800 ms CreateObjectMapping: 0.429400 ms MarkObjects: 2.856700 ms  DeleteObjects: 0.636200 ms)
+Total: 9.199200 ms (FindLiveObjects: 1.310700 ms CreateObjectMapping: 0.746900 ms MarkObjects: 5.540300 ms  DeleteObjects: 1.598800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -170,60 +170,6 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 3419.065550 seconds.
-  path: Assets/LustTextures
-  artifactKey: Guid(4559c2e9d8af8bc4a9679a27f3a7a29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LustTextures using Guid(4559c2e9d8af8bc4a9679a27f3a7a29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f1297ad4230e8db3d198b986092cc3') in 0.016109 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.354836 seconds.
-  path: Assets/LustTextures/1_LustModelPainting_BottomFrails_AO.png
-  artifactKey: Guid(5fe7fb4ab74eece4d86e149127d4c38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LustTextures/1_LustModelPainting_BottomFrails_AO.png using Guid(5fe7fb4ab74eece4d86e149127d4c38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d0f50eeb0545014267d15a835aaa465') in 0.113446 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/LustTextures/1_LustModelPainting_BottomGum_Metal.png
-  artifactKey: Guid(637c6b6c0c0cc304696e10b67ef8379b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LustTextures/1_LustModelPainting_BottomGum_Metal.png using Guid(637c6b6c0c0cc304696e10b67ef8379b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be34e406a7681ac1dcda322dfe57050e') in 0.017803 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/LustTextures/1_LustModelPainting_BottomFrails_Thickness.png
-  artifactKey: Guid(43e91c7c22b511447bd43bd2c5e4c0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LustTextures/1_LustModelPainting_BottomFrails_Thickness.png using Guid(43e91c7c22b511447bd43bd2c5e4c0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b76046ce927c5736d880aa86d5ea9a7c') in 0.012328 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/LustTextures/1_LustModelPainting_BottomGum_AO.png
-  artifactKey: Guid(86c66e8ed1d0bcf4189e6ec70dc9fd60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LustTextures/1_LustModelPainting_BottomGum_AO.png using Guid(86c66e8ed1d0bcf4189e6ec70dc9fd60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1dd4d2d8194a3fdc04a1a2dc29dcb88') in 0.014764 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/LustTextures/1_LustModelPainting_BottomGum_Normal.png
-  artifactKey: Guid(c628cd8e71e4bc340b707096db774b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LustTextures/1_LustModelPainting_BottomGum_Normal.png using Guid(c628cd8e71e4bc340b707096db774b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '135752e7254324d480e3bcc4f85aef35') in 0.012668 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/LustTextures/1_LustModelPainting_BottomGum_Thickness.png
-  artifactKey: Guid(f1864201f325a5d45bb6a2224d9f41a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LustTextures/1_LustModelPainting_BottomGum_Thickness.png using Guid(f1864201f325a5d45bb6a2224d9f41a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e392d3e2c1beec6a8317651e3ac575d1') in 0.010695 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/LustTextures/1_LustModelPainting_BottomGum_Albedo.png
-  artifactKey: Guid(6b501b03ed90af84296c89b57c2f4135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LustTextures/1_LustModelPainting_BottomGum_Albedo.png using Guid(6b501b03ed90af84296c89b57c2f4135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a214247343bd990c47a67bb8e70a6b') in 0.013943 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/LustTextures/1_LustModelPainting_BottomGum_Curve.png
-  artifactKey: Guid(04e2fffa554661141a5d7cf323db2fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LustTextures/1_LustModelPainting_BottomGum_Curve.png using Guid(04e2fffa554661141a5d7cf323db2fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '224830839f61df3bd869a0535e4e9597') in 0.012159 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
