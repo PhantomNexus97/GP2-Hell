@@ -10,19 +10,16 @@ public class SmileSpawn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the collider belongs to the player or another object you want to trigger the activation
         if (other.CompareTag("Player"))
         {
-            // Generate a random number between 0 and 1
+       
             float randomValue = Random.value;
-
-            // Check if the random value is less than the spawn chance
+            
             if (randomValue < _spawnChance)
             {
-                // Activate the game object
+                
                 _objectToActivate.SetActive(true);
-
-                // Deactivate the game object after the delay
+                
                 Invoke("DeactivateObject", _deactivateDelay);
             }
         }
@@ -30,7 +27,7 @@ public class SmileSpawn : MonoBehaviour
 
     private void DeactivateObject()
     {
-        // Deactivate the game object
+        
         _objectToActivate.SetActive(false);
     }
 }

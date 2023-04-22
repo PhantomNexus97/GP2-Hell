@@ -99,8 +99,6 @@ public class FirstPersonController : MonoBehaviour
             return;
         }
 
-   
-
     }
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {

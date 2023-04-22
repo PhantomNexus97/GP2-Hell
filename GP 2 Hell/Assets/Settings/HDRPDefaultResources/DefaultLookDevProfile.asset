@@ -23,13 +23,13 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   rayMiss:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 3
   depthBufferThickness:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.1
   fullResolutionSS:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   m_MaxRaySteps:
     m_OverrideState: 1
@@ -173,10 +173,10 @@ MonoBehaviour:
     m_Value: 0
   m_MaximumRadiusInPixels:
     m_OverrideState: 0
-    m_Value: 40
+    m_Value: 32
   m_BilateralUpsample:
     m_OverrideState: 0
-    m_Value: 1
+    m_Value: 0
   m_DirectionCount:
     m_OverrideState: 0
     m_Value: 2

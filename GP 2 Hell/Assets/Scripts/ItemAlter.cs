@@ -145,20 +145,6 @@ public class ItemAlter : MonoBehaviour
                     return;
                 }
             }
-
         }
     }
-    //void OnTriggerStay(Collider col)
-    //{
-        //PlayerInventory inventory = col.GetComponent<PlayerInventory>();
-
-        //_InputKeyDisplay.SetActive(true);
-
-
-        //if (Input.GetKeyDown(_inputKey))
-        //{
-
-
-        //}
-    //}
 }
