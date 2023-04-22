@@ -200,3 +200,7 @@ Received Import Request.
   path: Assets/LustTextures/1_LustModelPainting_BottomTeeth_WorldSpaceNormals.png
   artifactKey: Guid(01e5072f8f0b24343912b0b991269a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/LustTextures/1_LustModelPainting_BottomTeeth_WorldSpaceNormals.png using Guid(01e5072f8f0b24343912b0b991269a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '428262c6f6122594d368b9674bf60f0b') in 0.023865 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
