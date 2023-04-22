@@ -51,8 +51,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   saturation:
-    m_OverrideState: 0
-    m_Value: 30
+    m_OverrideState: 1
+    m_Value: 2
 --- !u!114 &-7365016561628529916
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c1be1b6c95cd2e41b27903b9270817f, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   mode:
     m_OverrideState: 1
     m_Value: 0
@@ -676,10 +676,10 @@ MonoBehaviour:
     m_Value: -2.65
   limitMin:
     m_OverrideState: 1
-    m_Value: 2.005917
+    m_Value: 7.5603476
   limitMax:
     m_OverrideState: 1
-    m_Value: 11.844025
+    m_Value: 10.792451
   curveMap:
     m_OverrideState: 0
     m_Value:

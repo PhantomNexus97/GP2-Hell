@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] _sounds;
+    public Sound[] _enemySounds;
 
     public static AudioManager instance;
     // Start is called before the first frame update

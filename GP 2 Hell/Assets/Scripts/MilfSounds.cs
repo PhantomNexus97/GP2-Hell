@@ -4,34 +4,25 @@ public class MilfSounds : MonoBehaviour
 {
     [SerializeField] public float _timePassed = 30f;
     [SerializeField] public bool _chasing = false;
+    
 
     // Update is called once per frame
     void Update()
     {
         _timePassed= Time.deltaTime;
 
-        if(_timePassed >= 30f && _chasing == false)
+        if(_timePassed == 1f)
         {
-            System.Action[] functions = { BansheeScream_01, BansheeScream_02, BansheeScream_03 };
-            int randomIndex = Random.Range(0, functions.Length);
-            functions[randomIndex].Invoke();
+            PlayRandomEnemySound();
             _timePassed = 0f;
         }
     }
 
-    void BansheeScream_01()
+    public void PlayRandomEnemySound()
     {
-        FindObjectOfType<AudioManager>().Play("Banshee_03");
-    }
-
-    void BansheeScream_02()
-    {
-        FindObjectOfType<AudioManager>().Play("Banshee_05");
-    }
-
-    void BansheeScream_03()
-    {
-        FindObjectOfType<AudioManager>().Play("Banshee_04");
+        int randomIndex = Random.Range(0, AudioManager.instance._enemySounds.Length);
+        AudioManager.instance.Play(AudioManager.instance._enemySounds[randomIndex].Name);
+        _timePassed = 30f;
     }
 
 
