@@ -170,3 +170,37 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5265.545265 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_TopFrail1_Metal.png
+  artifactKey: Guid(2f23e90c22ca375439a54970a8c3edfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_TopFrail1_Metal.png using Guid(2f23e90c22ca375439a54970a8c3edfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec80769c4cfed1899187a2c0ea7d9ad5') in 0.151521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 78.874525 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_TopGum_AO.png
+  artifactKey: Guid(7e4ab0eab796ac14c874288cd849bb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_TopGum_AO.png using Guid(7e4ab0eab796ac14c874288cd849bb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be9bcd8f98c7fc704ca6c49dff742e5b') in 0.014923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_TopGum_Thickness.png
+  artifactKey: Guid(3b51fdca047778c41adec9fee8b376d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_TopGum_Thickness.png using Guid(3b51fdca047778c41adec9fee8b376d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b999e93eba3af8514968373a49457863') in 0.012914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_TopGum_WorldSpaceNormals.png
+  artifactKey: Guid(4f6833b058177aa458509628332815d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_TopGum_WorldSpaceNormals.png using Guid(4f6833b058177aa458509628332815d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce2155b2c48bcd3da71f2c1314a781c') in 0.016660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_TopGum_Metal.png
+  artifactKey: Guid(3505fe440c3fd64458e1913fd6d4c42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_TopGum_Metal.png using Guid(3505fe440c3fd64458e1913fd6d4c42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d5a9d83848a9b9dc3455b8a5ba34735') in 0.016457 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
