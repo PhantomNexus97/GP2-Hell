@@ -176,3 +176,67 @@ Received Import Request.
   path: Assets/LustTextures/1_LustModelPainting_Head_Normal.png
   artifactKey: Guid(62335c5affafd7b409590f894a198f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/LustTextures/1_LustModelPainting_Head_Normal.png using Guid(62335c5affafd7b409590f894a198f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '367b3021fcaf3177a70bb1e012fbc08f') in 0.093519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.722588 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_Horns_AO.png
+  artifactKey: Guid(fa48256e3ece61e4f9a355dba9e1d3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_Horns_AO.png using Guid(fa48256e3ece61e4f9a355dba9e1d3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def579c0b1eb6fca8c69583859983d4d') in 0.472920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_Horns_Thickness.png
+  artifactKey: Guid(98b3d215041c3614e950729d0832695f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_Horns_Thickness.png using Guid(98b3d215041c3614e950729d0832695f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00284653b4f25e01db58cf6d6493a596') in 0.016342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.116182 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_InsideMouth_AO.png
+  artifactKey: Guid(e9a481ff6dd4bc24bbacdb9a7223031f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_InsideMouth_AO.png using Guid(e9a481ff6dd4bc24bbacdb9a7223031f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ea09edfc268ae0187c0867f98fefdd7') in 0.316287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_InsideMouth_Normal.png
+  artifactKey: Guid(c1fd93cc2412de44f80956300610fbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_InsideMouth_Normal.png using Guid(c1fd93cc2412de44f80956300610fbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32a9c666cd9798c431f78642533c8b5') in 0.013560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.706489 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_Legs_AO.png
+  artifactKey: Guid(803bbb0e825a52c4aaa744103ed5317f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_Legs_AO.png using Guid(803bbb0e825a52c4aaa744103ed5317f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c289321d68de041b4a6a5b840df7baa5') in 0.037933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_Legs_WorldSpaceNormals.png
+  artifactKey: Guid(81994c0f7d9c7d44fbdb6ecdc20a7d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_Legs_WorldSpaceNormals.png using Guid(81994c0f7d9c7d44fbdb6ecdc20a7d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e1829793be437522f04e5479a19b12') in 0.014873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 60.550223 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_MidFrail1_AO.png
+  artifactKey: Guid(aac53bdf56192b149b0987ebeca80f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_MidFrail1_AO.png using Guid(aac53bdf56192b149b0987ebeca80f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d860ae303b850324c5a6160fc545d60') in 0.175765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_MidFrail1_WorldSpaceNormals.png
+  artifactKey: Guid(1d5fa1e4cc3412346bce47c6df987b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_MidFrail1_WorldSpaceNormals.png using Guid(1d5fa1e4cc3412346bce47c6df987b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b8a84f8a9649a0fcb86040eef4f0cb') in 0.011681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.273357 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_Nails1_Curve.png
+  artifactKey: Guid(2ce0e2658ed344d4aaeaba5329f0295f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_Nails1_Curve.png using Guid(2ce0e2658ed344d4aaeaba5329f0295f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd4dffc7788143e35e3adb03e2d6198') in 0.018592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LustTextures/1_LustModelPainting_Nails1_WorldSpaceNormals.png
+  artifactKey: Guid(be986f1f0543a5144a0c9f8dc13f3a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LustTextures/1_LustModelPainting_Nails1_WorldSpaceNormals.png using Guid(be986f1f0543a5144a0c9f8dc13f3a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a11019c92ac3b1bac2123541edc8a6') in 0.012681 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
